@@ -4,6 +4,7 @@ import 'package:frontend/features/intro/screens/welcome_screen.dart';
 import 'package:frontend/features/manager/court_management/screen/court_management_detail_screen.dart';
 import 'package:frontend/features/manager/datetime_management/screens/datetime_management_screen.dart';
 import 'package:frontend/features/manager/manager_bottom_bar.dart';
+import 'package:frontend/features/player/facility_detail/screens/facility_detail_screen.dart';
 import 'package:frontend/features/player/player_bottom_bar.dart';
 import 'package:frontend/features/player/search/screens/search_by_location_screen.dart';
 
@@ -28,6 +29,11 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
       return MaterialPageRoute(
         settings: routeSettings,
         builder: (_) => const SearchByLocationScreen(),
+      );
+    case FacilityDetailScreen.routeName:
+      return MaterialPageRoute(
+        settings: routeSettings,
+        builder: (_) => const FacilityDetailScreen(),
       );
     case ManagerBottomBar.routeName:
       return MaterialPageRoute(
